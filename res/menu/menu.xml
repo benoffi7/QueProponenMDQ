@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_facebok"
+        android:icon="@drawable/ic_action_facebook"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_facebook"/>
+    <item
+        android:id="@+id/action_mail"
+        android:icon="@drawable/ic_action_mail"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_mail"/>
+
+</menu>

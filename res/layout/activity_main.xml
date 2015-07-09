@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@color/blanco_dos"
+    android:orientation="vertical"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <GridView
+        android:id="@+id/grid_candidatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="30dp"
+        android:gravity="center"
+        android:horizontalSpacing="3dp"
+        android:numColumns="3"
+        android:verticalSpacing="3dp"
+        tools:listitem="@layout/row_candidato" >
+
+    </GridView>
+
+</LinearLayout>
