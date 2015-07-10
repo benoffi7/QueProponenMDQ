@@ -80,7 +80,7 @@ public class MainActivity extends Activity
 		candidatos.add(new Candidato(getResources().getDrawable(R.drawable.cand_alb), "Alberto Rodríguez", "Frente Progresista",
 				"http://queproponen.com.ar/buenosaires/#candidato/Alberto-Rodríguez"));
 		candidatos.add(new Candidato(getResources().getDrawable(R.drawable.ic_launcher), "Oscar Hugo De Noia", "MATJ",
-				"http://queproponen.com.ar/buenosaires/#candidato/Vilma-Baragiola"));
+				"http://queproponen.com.ar/buenosaires/#candidato/Oscar-Hugo-De-Noia"));
 		
 
 	}
