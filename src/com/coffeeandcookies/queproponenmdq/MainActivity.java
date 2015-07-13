@@ -5,6 +5,7 @@ import java.util.Collections;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
@@ -45,44 +46,20 @@ public class MainActivity extends Activity
 
 	void setCandidatos()
 	{
-		candidatos.add(new Candidato(getResources().getDrawable(R.drawable.cand_ali), "Fernando Ali", "MAR",
-				"http://queproponen.com.ar/buenosaires/#candidato/Fernando-Ali"));
-		candidatos.add(new Candidato(getResources().getDrawable(R.drawable.cand_vilma), "Vilma Baragiola", "Cambiemos",
-				"http://queproponen.com.ar/buenosaires/#candidato/Vilma-Baragiola"));
-		candidatos.add(new Candidato(getResources().getDrawable(R.drawable.cand_arroyo), "Carlos Arroyo", "Cambiemos",
-				"http://queproponen.com.ar/buenosaires/#candidato/Carlos-Arroyo"));
-		candidatos.add(new Candidato(getResources().getDrawable(R.drawable.cand_alicia), "Alicia Reyley", "Frente Popular",
-				"http://queproponen.com.ar/buenosaires/#candidato/Alicia-Reyley"));
-		candidatos.add(new Candidato(getResources().getDrawable(R.drawable.cand_ale), "Alejandro Martínez", "FIT",
-				"http://queproponen.com.ar/buenosaires/#candidato/-Alejandro-Martínez"));
-		candidatos.add(new Candidato(getResources().getDrawable(R.drawable.cand_vicini), "Gustavo Vicini", "FIT",
-				"http://queproponen.com.ar/buenosaires/#candidato/Gustavo-Vicini"));
-		candidatos.add(new Candidato(getResources().getDrawable(R.drawable.cand_marcos), "Marcos Pascuan", "Nuevo Más",
-				"http://queproponen.com.ar/buenosaires/#candidato/Marcos-Pascuan"));
-		candidatos.add(new Candidato(getResources().getDrawable(R.drawable.cand_maria), "Maria Lynch", "ACF",
-				"http://queproponen.com.ar/buenosaires/#candidato/-Maria-Lynch"));
-		candidatos.add(new Candidato(getResources().getDrawable(R.drawable.cand_ricardo), "Ricardo Elorza", "ACF",
-				"http://queproponen.com.ar/buenosaires/#candidato/Ricardo-Elorza-"));
-		candidatos.add(new Candidato(getResources().getDrawable(R.drawable.ic_launcher), "Luis Sanchez", "Todos por Buenos Aires",
-				"http://queproponen.com.ar/buenosaires/#candidato/Luis-Sanchez"));
-		candidatos.add(new Candidato(getResources().getDrawable(R.drawable.cand_alvaro), "Álvaro Fanproyen", "UNA",
-				"http://queproponen.com.ar/buenosaires/#candidato/Álvaro-Fanproyen"));
-		candidatos.add(new Candidato(getResources().getDrawable(R.drawable.cand_lucas), "Lucas Fiorini", "UNA",
-				"http://queproponen.com.ar/buenosaires/#candidato/-Lucas-Fiorini"));
-		candidatos.add(new Candidato(getResources().getDrawable(R.drawable.cand_pulti), "Gustavo Pulti", "Frente Marplatense",
-				"http://queproponen.com.ar/buenosaires/#candidato/Gustavo-Pulti"));
-		candidatos.add(new Candidato(getResources().getDrawable(R.drawable.cand_adriana), "Adriana Merelas", "Patria Grande",
-				"http://queproponen.com.ar/buenosaires/#candidato/Adriana-Merelas"));
-		candidatos.add(new Candidato(getResources().getDrawable(R.drawable.cand_pablo), "Pablo Farías", "Frente Progresista",
-				"http://queproponen.com.ar/buenosaires/#candidato/Pablo-Farías"));
-		candidatos.add(new Candidato(getResources().getDrawable(R.drawable.cand_guille), "Guillermo Schütrumpf", "Frente Progresista",
-				"http://queproponen.com.ar/buenosaires/#candidato/Guillermo-Schütrumpf"));
-		candidatos.add(new Candidato(getResources().getDrawable(R.drawable.cand_alb), "Alberto Rodríguez", "Frente Progresista",
-				"http://queproponen.com.ar/buenosaires/#candidato/Alberto-Rodríguez"));
-		candidatos.add(new Candidato(getResources().getDrawable(R.drawable.ic_launcher), "Oscar Hugo De Noia", "MATJ",
-				"http://queproponen.com.ar/buenosaires/#candidato/Oscar-Hugo-De-Noia"));
-		
-
+		String[] candidatos_res = getResources().getStringArray(R.array.nombres);
+		String[] links_res = getResources().getStringArray(R.array.links);
+		String[] partidos_res = getResources().getStringArray(R.array.partidos);
+		String[] imagenes_res = getResources().getStringArray(R.array.imagenes);
+		for (int i = 0; i < candidatos_res.length; i++)
+		{
+			String nombre = candidatos_res[i];
+			String partido = partidos_res[i];
+			String link = links_res[i];
+			String imagen = imagenes_res[i];
+			Drawable imagen_d = getResources().getDrawable(getResources().getIdentifier(imagen, "drawable", getPackageName()));
+			Candidato oCandidato =  new Candidato(imagen_d, nombre, partido, link); 
+			candidatos.add(oCandidato);			
+		}
 	}
 
 	void setList()

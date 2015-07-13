@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="imagenes">
+        <item>cand_ali</item>
+        <item>cand_vilma</item>
+        <item>cand_arroyo</item>
+        <item>cand_alicia</item>
+        <item>cand_ale</item>
+        <item>cand_vicini</item>
+        <item>cand_marcos</item>
+        <item>cand_maria</item>
+        <item>cand_ricardo</item>
+        <item>ic_launcher</item>
+        <item>cand_alvaro</item>
+        <item>cand_lucas</item>
+        <item>cand_pulti</item>
+        <item>cand_adriana</item>
+        <item>cand_pablo</item>
+        <item>cand_guille</item>
+        <item>cand_alb</item>
+        <item>ic_launcher</item>
+    </string-array>
+    <string-array name="nombres">
+        <item>Fernando Ali</item>
+        <item>Vilma Baragiola</item>
+        <item>Carlos Arroyo</item>
+        <item>Alicia Reyley</item>
+        <item>Alejandro Martínez</item>
+        <item>Gustavo Vicini</item>
+        <item>Marcos Pascuan</item>
+        <item>Maria Lynch</item>
+        <item>Ricardo Elorza</item>
+        <item>Luis Sanchez</item>
+        <item>Álvaro Fanproyen</item>
+        <item>Lucas Fiorini</item>
+        <item>Gustavo Pulti</item>
+        <item>Adriana Merelas</item>
+        <item>Pablo Farías</item>
+        <item>Guillermo Schütrumpf</item>
+        <item>Alberto Rodríguez</item>
+        <item>Oscar Hugo De Noia</item>
+    </string-array>
+    <string-array name="links">
+        <item>http://queproponen.com.ar/buenosaires/#candidato/Fernando-Ali</item>
+        <item>http://queproponen.com.ar/buenosaires/#candidato/Vilma-Baragiola</item>
+        <item>http://queproponen.com.ar/buenosaires/#candidato/Carlos-Arroyo</item>
+        <item>http://queproponen.com.ar/buenosaires/#candidato/Alicia-Reyley</item>
+        <item>http://queproponen.com.ar/buenosaires/#candidato/-Alejandro-Martínez</item>
+        <item>http://queproponen.com.ar/buenosaires/#candidato/Gustavo-Vicini</item>
+        <item>http://queproponen.com.ar/buenosaires/#candidato/Marcos-Pascuan</item>
+        <item>http://queproponen.com.ar/buenosaires/#candidato/-Maria-Lynch</item>
+        <item>http://queproponen.com.ar/buenosaires/#candidato/Ricardo-Elorza-</item>
+        <item>http://queproponen.com.ar/buenosaires/#candidato/Luis-Sanchez</item>
+        <item>http://queproponen.com.ar/buenosaires/#candidato/Álvaro-Fanproyen</item>
+        <item>http://queproponen.com.ar/buenosaires/#candidato/-Lucas-Fiorini</item>
+        <item>http://queproponen.com.ar/buenosaires/#candidato/Gustavo-Pulti</item>
+        <item>http://queproponen.com.ar/buenosaires/#candidato/Adriana-Merelas</item>
+        <item>http://queproponen.com.ar/buenosaires/#candidato/Pablo-Farías</item>
+        <item>http://queproponen.com.ar/buenosaires/#candidato/Guillermo-Schütrumpf</item>
+        <item>http://queproponen.com.ar/buenosaires/#candidato/Alberto-Rodríguez</item>
+        <item>http://queproponen.com.ar/buenosaires/#candidato/Oscar-Hugo-De-Noia</item>
+    </string-array>
+    <string-array name="partidos">
+        <item>MAR</item>
+        <item>Cambiemos</item>
+        <item>Cambiemos</item>
+        <item>Frente Popular</item>
+        <item>FIT</item>
+        <item>FIT</item>
+        <item>Nuevo Más</item>
+        <item>ACF</item>
+        <item>ACF</item>
+        <item>Todos por Buenos Aires</item>
+        <item>UNA</item>
+        <item>UNA</item>
+        <item>Frente Marplatense</item>
+        <item>Patria Grande</item>
+        <item>Frente Progresista</item>
+        <item>Frente Progresista"</item>
+        <item>Frente Progresista</item>
+        <item>MATJ</item>
+    </string-array>
+
+</resources>
