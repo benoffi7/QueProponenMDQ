@@ -14,7 +14,7 @@ QueProponenMDQ!
  - Modificar el `Android Manifiest.xml` para cambiar el nombre de la app, el logo, el nombre del paquete y la versión de la app (las nuevas apps empiezan en 1.0).
  - Recolectar: a) nombres de los candidatos b) imágenes (100*100 px) c) partidos que pertenecen d) link a sus propuestas.
  - Las imagenes van dentro de la carpeta `drawable-hdpi`
- - Volcar datos en `array.xml` Hay un arreglo para cada atributo. Tener precaución que cada arreglo tenga la misma cantidad de elementos. Las imágenes van cargadas sin la extensión.  
+ - Volcar datos en `array.xml` Hay un arreglo para cada atributo. Tener precaución que cada arreglo tenga la misma cantidad de elementos. Las imágenes van cargadas sin la extensión. El arreglo `paso` indica si el candidato supero la instancia de PASO. `0` es para aquellos pre-candidatos que no superaron el piso establecido por ley, mientras que el valor `1` es para los que competiran en octubre. 
  - Probar.
  - Generar APK.
  - Subir app
