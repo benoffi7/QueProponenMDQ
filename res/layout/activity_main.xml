@@ -8,6 +8,13 @@
     android:orientation="vertical"
     tools:context="${relativePackage}.${activityClass}" >
 
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="Pasaron las PASO" />
+
     <GridView
         android:id="@+id/grid_candidatos"
         android:layout_width="match_parent"

@@ -27,19 +27,65 @@
         <item>Carlos Arroyo</item>
         <item>Alicia Reyley</item>
         <item>Alejandro Martínez</item>
+        
         <item>Gustavo Vicini</item>
         <item>Marcos Pascuan</item>
         <item>Maria Lynch</item>
         <item>Ricardo Elorza</item>
         <item>Luis Sanchez</item>
+        
         <item>Álvaro Fanproyen</item>
         <item>Lucas Fiorini</item>
         <item>Gustavo Pulti</item>
         <item>Adriana Merelas</item>
         <item>Pablo Farías</item>
+        
         <item>Guillermo Schütrumpf</item>
         <item>Alberto Rodríguez</item>
         <item>Oscar Hugo De Noia</item>
+    </string-array>
+    <integer-array name="paso">
+   		<item>0</item>
+        <item>0</item>
+        <item>1</item>
+        <item>0</item>
+        <item>1</item>
+		
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+		
+        <item>0</item>
+        <item>1</item>
+        <item>1</item>
+        <item>0</item>
+        <item>1</item>
+		
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+</integer-array>
+<string-array name="partidos">
+        <item>MAR</item>
+        <item>Cambiemos</item>
+        <item>Cambiemos</item>
+        <item>Frente Popular</item>
+        <item>FIT</item>
+        <item>FIT</item>
+        <item>Nuevo Más</item>
+        <item>ACF</item>
+        <item>ACF</item>
+        <item>Todos por Buenos Aires</item>
+        <item>UNA</item>
+        <item>UNA</item>
+        <item>Frente Marplatense</item>
+        <item>Patria Grande</item>
+        <item>Frente Progresista</item>
+        <item>Frente Progresista"</item>
+        <item>Frente Progresista</item>
+        <item>MATJ</item>
     </string-array>
     <string-array name="links">
         <item>http://queproponen.com.ar/buenosaires/#candidato/Fernando-Ali</item>
@@ -61,25 +107,7 @@
         <item>http://queproponen.com.ar/buenosaires/#candidato/Alberto-Rodríguez</item>
         <item>http://queproponen.com.ar/buenosaires/#candidato/Oscar-Hugo-De-Noia</item>
     </string-array>
-    <string-array name="partidos">
-        <item>MAR</item>
-        <item>Cambiemos</item>
-        <item>Cambiemos</item>
-        <item>Frente Popular</item>
-        <item>FIT</item>
-        <item>FIT</item>
-        <item>Nuevo Más</item>
-        <item>ACF</item>
-        <item>ACF</item>
-        <item>Todos por Buenos Aires</item>
-        <item>UNA</item>
-        <item>UNA</item>
-        <item>Frente Marplatense</item>
-        <item>Patria Grande</item>
-        <item>Frente Progresista</item>
-        <item>Frente Progresista"</item>
-        <item>Frente Progresista</item>
-        <item>MATJ</item>
-    </string-array>
+    
+ 
 
 </resources>

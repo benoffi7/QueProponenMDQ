@@ -11,6 +11,9 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.GridView;
 
 import com.coffeeandcookies.queproponenmdq.adaptadores.AdaptadorCandidatos;
@@ -21,6 +24,7 @@ public class MainActivity extends Activity
 
 	private GridView grid_candidatos;
 	ArrayList<Candidato> candidatos = new ArrayList<Candidato>();
+	CheckBox checkBox1;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
@@ -28,7 +32,7 @@ public class MainActivity extends Activity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		setUI();
-		setCandidatos();
+		setCandidatos(1);
 
 	}
 
@@ -42,22 +46,41 @@ public class MainActivity extends Activity
 	void setUI()
 	{
 		grid_candidatos = (GridView) findViewById(R.id.grid_candidatos);
+		checkBox1  = (CheckBox) findViewById(R.id.checkBox1);
+		checkBox1.setOnCheckedChangeListener(new OnCheckedChangeListener()
+		{
+			
+			@Override
+			public void onCheckedChanged(CompoundButton buttonView, boolean isChecked)
+			{
+				if (isChecked)
+				setCandidatos(1);
+				else
+				setCandidatos(0);
+				
+				setList();
+			}
+		});
 	}
 
-	void setCandidatos()
+	void setCandidatos(int seleccion)
 	{
+		candidatos.clear();
 		String[] candidatos_res = getResources().getStringArray(R.array.nombres);
 		String[] links_res = getResources().getStringArray(R.array.links);
 		String[] partidos_res = getResources().getStringArray(R.array.partidos);
 		String[] imagenes_res = getResources().getStringArray(R.array.imagenes);
+		int[] paso_res = getResources().getIntArray(R.array.paso);
 		for (int i = 0; i < candidatos_res.length; i++)
 		{
 			String nombre = candidatos_res[i];
 			String partido = partidos_res[i];
 			String link = links_res[i];
 			String imagen = imagenes_res[i];
+			int paso_aux = paso_res[i];
 			Drawable imagen_d = getResources().getDrawable(getResources().getIdentifier(imagen, "drawable", getPackageName()));
 			Candidato oCandidato =  new Candidato(imagen_d, nombre, partido, link); 
+			if (paso_aux == seleccion)
 			candidatos.add(oCandidato);			
 		}
 	}
